@@ -1,60 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-89371373-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-  <head>
-    <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="google-site-verification" content="VYbbYX7QA9q3BJVfjNjjiRPCVZOMzTEqcc-47k7QgII" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <title> Yanqing Wu </title>
-    <link rel="canonical" href="https://www.yanqingwu.com">
-    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
-      <link rel="stylesheet" href="/static/css/home.css">
-    </head>
-  <body>
-    <header>
-	</style>
-	<div id="main">
-		<div id="main_text">
-	      <h1>Yanqing Wu</h1>
-	      <cite style="font-size:1.3em">Love robots. Want to teach them to love people back.</cite>
-	      <br><br><br>
-	      <tag>
-	        Currently senior Computer Engineering student at the <a href="https://uwaterloo.ca/">University of Waterloo</a>, Canada.
-	        <br>
-	        Previously <a href="https://www.ibm.com/employment/extremeblue/">Extreme Blue</a> tech intern at <a href="https://www.ibm.com">IBM</a>;
-	        <br>
-	        embedded vision and DL intern (under the supervision of Dr. Brady Laska and Dr. Dong Zheng) at <a href="https://www.nxp.com/">NXP Semiconductors</a>;
-	        <br>
-	        autonomous driving simulation intern (under the supervision of Dr. Peyman Yadmellat and Dr. Masoud Nosrati) at <a href="https://www.huawei.com/en/">Huawei</a> Noah's Ark Lab;
-	        <br>
-	        undergraduate researcher (under the supervisoin of Prof. Arash Arami) at University of Waterloo;
-	        <br>
-	        2019-2020 Exchange at <a href="https://www.tudelft.nl/en/">TU Delft</a>, Netherlands.
-	        </br></br>
-	      </tag>
-	      <ul>
-	        <li>
-	          <a href="https://www.linkedin.com/in/wuyanqing/" target="_blank">LinkedIn</a> /  
-	          <a href="http://github.com/pwyq" target="_blank">GitHub</a> / 
-	          <a href="https://twitter.com/P_WYQ" target="_blank">Twitter</a>
-	        </li>
-	        <li>
-	          <a href="https://blog.yanqingwu.com/" target="_blank">Blog</a> / 
-	          <a href="https://blog.yanqingwu.com/study/2018/01/01/Booklists/" target="_blank">Reading List</a>
-	        </li>
-	        <li><a href="mailto:meet.yanqing.wu@gmail.com">E-mail</a></li>
-	        <li><a href="/Yanqing_Wu_Resume.pdf">Résumé</a></li>
-	      </ul>
-		</div>
-	</div>
-    </header>
-  </body>
+<html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-89371373-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<head>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="google-site-verification" content="VYbbYX7QA9q3BJVfjNjjiRPCVZOMzTEqcc-47k7QgII" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<title> Yanqing Wu </title>
+<link rel="canonical" href="https://www.yanqingwu.com">
+<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/static/css/home.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 50px;
+}
+
+.left {
+  width: 30%;
+}
+
+.right {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+
+<div class="row">
+  <div class="column left">
+    <img src="/portrait.jpg" alt="portrait" style="max-width:100%;">
+  </div>
+  <div class="column right">
+        <h1>Yanqing Wu</h1>
+        <cite style="font-size:1.3em">Love robots. Want to teach them to love people back.</cite>
+        <br><br><br>
+        <tag>
+          <p align="left">          
+            I am broadly interested in robotics and reinforcement learning with continuous space tasks.
+            <br><br>
+            I am a first-year master's student in Computing Science at the <a href="https://www.ualberta.ca/index.html">University of Alberta</a>, Canada. I am very fortunate to be supervised by <a href="https://apps.ualberta.ca/directory/person/rgoebel">Randy Goebel</a> and <a href="https://hengshuaiyao.github.io/">Hengshuai Yao</a>. Prior to that, I received my bachelor's degree from Computer Engineering at the <a href="https://uwaterloo.ca/">University of Waterloo</a>, Canada.
+            <br><br><br>
+            Previously <a href="https://www.ibm.com/employment/extremeblue/">Extreme Blue</a> tech intern at <a href="https://www.ibm.com">IBM</a>;
+            <br>
+            embedded vision and DL intern (mentors: Dr. Brady Laska and Dr. Dong Zheng) at <a href="https://www.nxp.com/">NXP Semiconductors</a>;
+            <br>
+            autonomous driving simulation intern (mentors: Dr. Peyman Yadmellat and Dr. Masoud Nosrati) at <a href="https://www.huawei.com/en/">Huawei</a> Noah's Ark Lab;
+            <br>
+            undergraduate researcher (advisor: Prof. Arash Arami) at University of Waterloo;
+            <br>
+            2019-2020 Exchange at <a href="https://www.tudelft.nl/en/">TU Delft</a>, Netherlands.
+          </p>
+          </br></br>
+        </tag>
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/wuyanqing/" target="_blank">LinkedIn</a> /  
+            <a href="http://github.com/pwyq" target="_blank">GitHub</a> / 
+            <a href="https://twitter.com/P_WYQ" target="_blank">Twitter</a>
+          </li>
+          <li>
+            <a href="https://blog.yanqingwu.com/" target="_blank">Blog</a> / 
+            <a href="https://blog.yanqingwu.com/study/2018/01/01/Booklists/" target="_blank">Reading List</a>
+          </li>
+          <li><a href="mailto:meet.yanqing.wu@gmail.com">E-mail</a></li>
+          <li><a href="/Yanqing_Wu_CV.pdf">CV</a></li>
+        </ul>
+  </div>
+</div>
+
+</body>
 </html>
