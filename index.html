@@ -27,10 +27,6 @@
   padding: 50px;
 }
 
-.left {
-  width: 30%;
-}
-
 .right {
   width: 70%;
 }
@@ -40,6 +36,17 @@
   content: "";
   display: table;
   clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  #left_profile {
+    visibility: hidden;
+    clear: both;
+    float: left;
+    margin: 10px auto 5px 20px;
+    width: 30%;
+    display: none;
+  }
 }
 
 li{
@@ -61,7 +68,7 @@ a:hover {
 
 
 <div class="row">
-  <div class="column left">
+  <div class="column" id="left_profile">
     <img src="/portrait.jpg" alt="portrait" style="max-width:100%;">
   </div>
   <div class="column right">
