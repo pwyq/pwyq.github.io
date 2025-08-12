@@ -1,253 +1,87 @@
 <!DOCTYPE html>
-<html>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-89371373-1', 'auto');
-  ga('send', 'pageview');
-</script>
+<html lang="en">
 <head>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="google-site-verification" content="VYbbYX7QA9q3BJVfjNjjiRPCVZOMzTEqcc-47k7QgII" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-<title> Yanqing Wu </title>
-<link rel="canonical" href="https://www.yanqingwu.com">
-<link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="/static/css/home.css">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="google-site-verification" content="VYbbYX7QA9q3BJVfjNjjiRPCVZOMzTEqcc-47k7QgII" />
+  <link rel="canonical" href="https://www.yanqingwu.com" />
+  <title>Yanqing Wu</title>
 
-.column {
-  float: left;
-  padding: 50px;
-}
+  <link rel="stylesheet" href="static/css/main.css?v=desert1">
 
-.left {
-  width: 30%;
-}
-
-.right {
-  width: 70%;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-@media screen and (max-width: 600px) {
-  #left_profile {
-    visibility: hidden;
-    clear: both;
-    float: left;
-    margin: 10px auto 5px 20px;
-    width: 30%;
-    display: none;
-  }
-  #right_profile {
-    width: 100%;
-  }
-}
-
-li{
-  margin: 10px 0;
-}
-
-a {
-  color: blue;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  text-decoration-style: dotted;
-}
-
-#projects {
-  padding: 2rem;
-  background-color: #f9f9f9;
-}
-
-.project {
-  display: flex;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
-
-.project img {
-  max-width: 300px;
-  height: auto;
-  border-radius: 8px;
-}
-
-.project-content {
-  flex: 1;
-}
-
-.project-content h3 {
-  margin-top: 0;
-}
-
-.tools {
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tools li {
-  background-color: #e0e0e0;
-  padding: 0.4em 0.8em;
-  border-radius: 4px;
-  font-size: 0.9em;
-}
-
-</style>
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-89371373-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 <body>
 
+  <nav class="site-nav" role="navigation" aria-label="Primary">
+    <ul>
+      <li><a href="index.html"  aria-current="page">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="https://blog.yanqingwu.com/" target="_blank" rel="noopener">(old) Blog</a></li>
+    </ul>
+  </nav>
 
-<div class="row">
-  <div class="column left" id="left_profile">
-    <img src="/portrait.jpg" alt="portrait" style="max-width:100%;">
-  </div>
-  <div class="column right" id="right_profile">
-        <h1>Yanqing Wu</h1>
-        <cite style="font-size:1.3em">Love robots. Want to teach them to love people back.</cite>
-        <br><br><br>
-        <tag>
-          <p align="left">          
-            I am broadly interested in robotics and reinforcement learning with continuous space tasks.
-            <br><br>
-            I am a master's student in Computing Science at the <a href="https://www.ualberta.ca/index.html" target="_blank">University of Alberta</a>, Canada. I am very fortunate to be supervised by <a href="https://apps.ualberta.ca/directory/person/rgoebel" target="_blank">Randy Goebel</a> and <a href="https://sites.ualberta.ca/~szepesva/" target="_blank">Csaba Szepesvari</a>.
-             <!-- and <a href="https://hengshuaiyao.github.io/" target="_blank">Hengshuai Yao</a>. -->
-            Prior to that, I received my bachelor's degree from Computer Engineering at the <a href="https://uwaterloo.ca/" target="_blank">University of Waterloo</a>, Canada. I was advised by <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/dwang">David Wang</a> on machine automation at UWaterloo.
-            <br><br>
-            Previously research engineer (mentors: Ding Quan and Hengshuai Yao) at <a href="http://www.viwistar.com/english" target="_blank">Viwistar Robotics</a>;
-            <br>
-            <a href="https://www.ibm.com/employment/extremeblue/" target="_blank">Extreme Blue</a> tech intern at IBM;
-            <br>
-            embedded vision and DL intern (mentors: Brady Laska and Dong Zheng) at <a href="https://www.nxp.com/" target="_blank">NXP Semiconductors</a>;
-            <br>
-            autonomous driving simulation intern (mentors: Peyman Yadmellat and Masoud Nosrati) at <a href="https://www.huawei.com/en/" target="_blank">Huawei</a> Noah's Ark Lab;
-            <br>
-            undergraduate researcher (advisor: Arash Arami) at the <a href="https://www.aramilab.com/" target="_blank">Neuromechanics and Assistive Robotics Lab</a>,  University of Waterloo;
-            <br>
-            2019-2020 Exchange at the <a href="https://www.tudelft.nl/en/" target="_blank">TU Delft</a>, Netherlands.
-          </p>
-          </br></br>
-        </tag>
-        <ul>
-          <li>
-            <a href="https://scholar.google.com/citations?user=_cGsBs0AAAAJ" target="_blank">Google Scholar</a> /
-            <a href="https://www.linkedin.com/in/wuyanqing/" target="_blank">LinkedIn</a> /  
-            <a href="http://github.com/pwyq" target="_blank">GitHub</a> / 
-            <a href="https://www.instagram.com/yanqing_wu_" target="_blank">Instagram</a> /
-            <a href="https://twitter.com/P_WYQ" target="_blank">Twitter</a>
-          </li>
-          <li>
-            <a href="https://blog.yanqingwu.com/" target="_blank">Blog</a> / 
-            <a href="https://blog.yanqingwu.com/study/2018/01/01/Booklists/" target="_blank">Reading List</a>
-          </li>
-          <li><a href="mailto:meet.yanqing.wu@gmail.com">E-mail</a></li>
-          <li><a href="https://drive.google.com/file/d/13mBOXeY0FkyoKcI9noZiiY0sXGQ52Zqn/view?usp=sharing" target="_blank">CV</a></li>
-        </ul>
-  </div>
-</div>
+  <div class="row">
+    <div class="column left" id="left_profile">
+      <img src="static/img/doggie.png" alt="portrait" style="max-width:100%;" />
+    </div>
 
-<section id="projects">
-  <h2>Projects</h2>
+    <div class="column right" id="right_profile">
+      <h1>Yanqing Wu</h1>
+      <cite style="font-size:1.3em">Love robots. Want to teach them to love people back.</cite>
+      <br/><br/><br/>
 
-  <div class="project">
-    <img src="Belludum-logo-blue-red.svg" alt="Project Logo" />
-    <div class="project-content">
-      <h3>Simulation-Driven Web Game (Stealth project; WIP)</h3>
-      <p>
-        A real-time, military-themed, multiplayer, semi-automation/incremental webgame.
-        Designed for maintainability, expandability, and performance — built entirely from scratch with no templates.
+      <p align="left">
+        I am a recent grad in Computing Science at the
+        <a href="https://www.ualberta.ca/index.html" target="_blank" rel="noopener">University of Alberta</a>, Canada.
+        I am very fortunate to be supervised by
+        <a href="https://apps.ualberta.ca/directory/person/rgoebel" target="_blank" rel="noopener">Randy Goebel</a>
+        and <a href="https://sites.ualberta.ca/~szepesva/" target="_blank" rel="noopener">Csaba Szepesvari</a>.
+        Prior to that, I received my bachelor's degree from Computer Engineering at the
+        <a href="https://uwaterloo.ca/" target="_blank" rel="noopener">University of Waterloo</a>, Canada. I was advised by
+        <a href="https://uwaterloo.ca/electrical-computer-engineering/profile/dwang" target="_blank" rel="noopener">David Wang</a>
+        on machine automation at UWaterloo.
+        <br/><br/>
+        Previously research engineer (mentors: Ding Quan and Hengshuai Yao) at
+        <a href="http://www.viwistar.com/english" target="_blank" rel="noopener">Viwistar Robotics</a>;
+        <br/>
+        <a href="https://www.ibm.com/employment/extremeblue/" target="_blank" rel="noopener">Extreme Blue</a> tech intern at IBM;
+        <br/>
+        embedded vision and DL intern (mentors: Brady Laska and Dong Zheng) at
+        <a href="https://www.nxp.com/" target="_blank" rel="noopener">NXP Semiconductors</a>;
+        <br/>
+        autonomous driving simulation intern (mentors: Peyman Yadmellat and Masoud Nosrati) at
+        <a href="https://www.huawei.com/en/" target="_blank" rel="noopener">Huawei</a> Noah's Ark Lab;
+        <br/>
+        undergraduate researcher (advisor: Arash Arami) at the
+        <a href="https://www.aramilab.com/" target="_blank" rel="noopener">Neuromechanics and Assistive Robotics Lab</a>,
+        University of Waterloo;
+        <br/>
+        2019-2020 Exchange at the <a href="https://www.tudelft.nl/en/" target="_blank" rel="noopener">TU Delft</a>, Netherlands.
       </p>
 
-      <p>
-        I designed and implemented both front-end and back-end systems, including user authentication, real-time team coordination,
-        language localization, and gameplay logic — all while self-learning full-stack development and Vue.
-      </p>
-
-      <ul class="tools">
-        <!-- Frontend -->
-        <li><strong>Vue 3 + Vite</strong>: Reactive front-end framework with lightning-fast build system</li>
-        <li><strong>TypeScript</strong>: Static typing for code robustness and maintainability</li>
-        <li><strong>Pinia</strong>: Centralized state management for UI/data sync</li>
-        <li><strong>BEM CSS</strong>: Structured CSS for consistent styling</li>
-        <li><strong>UI/UX design</strong>: Custom layout for dashboard and card interface</li>
-
-        <!-- Backend -->
-        <li><strong>Node.js</strong>: Server logic and API endpoints</li>
-        <li><strong>MongoDB Atlas</strong>: Cloud-hosted database for storing users, teams, and game state</li>
-        <li><strong>JWT Auth</strong>: Secure user authentication</li>
-        <li><strong>CORS config</strong>: Safe cross-origin API calls</li>
-
-        <!-- Communication -->
-        <li><strong>WebSocket</strong>: Real-time multiplayer chat and game state updates</li>
-        <li><strong>Axios</strong>: Standard API requests for user login, resource sync, etc.</li>
-        <li><strong>Browser storage (localStorage)</strong>: Persistent user settings and localization</li>
-
-        <!-- Testing & CI -->
-        <li><strong>Jest</strong>: Unit tests for key modules</li>
-        <li><strong>GitHub Actions</strong>: Automated CI/CD for development workflow</li>
-
-        <!-- Game Features -->
-        <li><strong>Core game design</strong>: Real-time simulation engine, progress bars, idle/active hybrid systems</li>
-        <li><strong>Anti-hacking logic</strong>: Defensive coding and validation for critical operations</li>
-        <li><strong>User system</strong>: Account creation, login, progress tracking</li>
-        <li><strong>Resource system</strong>: Mining, construction, conversion and storage</li>
-        <li><strong>Dashboard system</strong>: Centralized interface for teams, missions, and reports</li>
-
-        <!-- Project Management -->
-        <li><strong>Design thinking</strong>: Focused on future-proofing, reusability, and system coherence</li>
-        <li><strong>vibe-coding</strong>: Accelerated development using code suggestions</li>
+      <ul>
+        <li>
+          <a href="https://scholar.google.com/citations?user=_cGsBs0AAAAJ" target="_blank" rel="noopener">Google Scholar</a> /
+          <a href="https://www.linkedin.com/in/wuyanqing/" target="_blank" rel="noopener">LinkedIn</a> /
+          <a href="http://github.com/pwyq" target="_blank" rel="noopener">GitHub</a> /
+          <a href="https://www.instagram.com/yanqing_wu_" target="_blank" rel="noopener">Instagram</a> /
+          <!-- <a href="https://twitter.com/P_WYQ" target="_blank" rel="noopener">Twitter</a> -->
+        </li>
+        <li><a href="mailto:meet.yanqing.wu@gmail.com">E-mail</a></li>
+        <li><a href="https://drive.google.com/file/d/13mBOXeY0FkyoKcI9noZiiY0sXGQ52Zqn/view?usp=sharing" target="_blank" rel="noopener">CV</a></li>
       </ul>
     </div>
   </div>
-
-  <div class="project">
-    <img src="mhnow-automation.png" alt="Monster Hunter NOW automation" />
-    <div class="project-content">
-      <h3>Mobile Game Automation & Reverse Engineering</h3>
-      <p>
-        A personal deep-dive into automation and memory-level reverse engineering of a real-time AR ARPG mobile game,
-        <em>Monster Hunter NOW</em> (from Pokemon Go company). This project explored mobile system behavior, game memory, and scripting logic through practical experimentation.
-      </p>
-
-      <ul class="tools">
-        <li><strong>OpenCV + Vysor:</strong> Used computer vision to automate monster hunting by detecting game states and simulating user input</li>
-        <li><strong>Python Scripting:</strong> Designed real-time control flow to manage hunt timing, item usage, and in-battle decisions</li>
-        <li><strong>Rooted Android:</strong> Gained elevated permissions to implement GPS spoofing for map-based gameplay</li>
-        <li><strong>GameGuardian:</strong> Performed address-based memory inspection to modify weapon attack values during runtime</li>
-        <li><strong>APK reverse engineering:</strong> Decompiled the game client to retrieve hidden assets and internal keys (for educational exploration)</li>
-      </ul>
-
-      <p>
-        The automation system could consistently <strong>hunt all monsters in the game</strong> without human intervention.
-        As a result, I became one of the earliest players to reach <strong>max level and obtain a complete weapon collection</strong>,
-        all through scripting and reverse engineering.
-      </p>
-    </div>
-  </div>
-
-
-
-</section>
-
-
 
 </body>
 </html>
