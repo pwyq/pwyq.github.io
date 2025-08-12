@@ -1,0 +1,98 @@
+/* ===== Desert Sand Minimal Theme (always light) ===== */
+:root {
+  /* Colors */
+  --sand-light: #fef9e7;  /* background sand */
+  --sand-mid:   #f5deb3;  /* nav / highlight */
+  --sand-dark:  #deb887;  /* nav hover */
+  --ink-dark:   #3a2f1d;  /* text */
+  --accent:     #c97b36;  /* link/accent */
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  background: var(--sand-light);
+  color: var(--ink-dark);
+}
+img { max-width: 100%; height: auto; display: block; }
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.row::after { content: ""; display: table; clear: both; }
+.column { float: left; padding: 50px; }
+.left  { width: 30%; }
+.right { width: 70%; }
+
+@media (max-width: 600px) {
+  #left_profile { display: none; }
+  #right_profile { width: 100%; }
+  .column { padding: 24px; }
+}
+
+/* Nav bar */
+.site-nav {
+  background: var(--sand-mid);
+  border-bottom: 2px solid var(--sand-dark);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.site-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.site-nav li { margin: 0; }
+.site-nav a {
+  display: block;
+  padding: 14px 20px;
+  color: var(--ink-dark);
+}
+.site-nav a[aria-current="page"],
+.site-nav a:hover {
+  background: var(--sand-dark);
+  color: white;
+}
+
+/* Projects section */
+#projects {
+  padding: 2rem;
+  background: var(--sand-mid);
+}
+.project {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: var(--sand-light);
+  border: 1px solid var(--sand-dark);
+  border-radius: 8px;
+  padding: 1rem;
+}
+.project img { max-width: 300px; border-radius: 8px; }
+.project-content { flex: 1 1 320px; }
+.tools {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.tools li {
+  background: var(--sand-mid);
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
