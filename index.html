@@ -69,6 +69,48 @@ a:hover {
   text-decoration: underline;
   text-decoration-style: dotted;
 }
+
+#projects {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.project {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.project img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-content {
+  flex: 1;
+}
+
+.project-content h3 {
+  margin-top: 0;
+}
+
+.tools {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tools li {
+  background-color: #e0e0e0;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
 </style>
 </head>
 <body>
@@ -121,6 +163,91 @@ a:hover {
         </ul>
   </div>
 </div>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project">
+    <img src="Belludum-logo-blue-red.svg" alt="Project Logo" />
+    <div class="project-content">
+      <h3>Simulation-Driven Web Game (Stealth project; WIP)</h3>
+      <p>
+        A real-time, military-themed, multiplayer, semi-automation/incremental webgame.
+        Designed for maintainability, expandability, and performance — built entirely from scratch with no templates.
+      </p>
+
+      <p>
+        I designed and implemented both front-end and back-end systems, including user authentication, real-time team coordination,
+        language localization, and gameplay logic — all while self-learning full-stack development and Vue.
+      </p>
+
+      <ul class="tools">
+        <!-- Frontend -->
+        <li><strong>Vue 3 + Vite</strong>: Reactive front-end framework with lightning-fast build system</li>
+        <li><strong>TypeScript</strong>: Static typing for code robustness and maintainability</li>
+        <li><strong>Pinia</strong>: Centralized state management for UI/data sync</li>
+        <li><strong>BEM CSS</strong>: Structured CSS for consistent styling</li>
+        <li><strong>UI/UX design</strong>: Custom layout for dashboard and card interface</li>
+
+        <!-- Backend -->
+        <li><strong>Node.js</strong>: Server logic and API endpoints</li>
+        <li><strong>MongoDB Atlas</strong>: Cloud-hosted database for storing users, teams, and game state</li>
+        <li><strong>JWT Auth</strong>: Secure user authentication</li>
+        <li><strong>CORS config</strong>: Safe cross-origin API calls</li>
+
+        <!-- Communication -->
+        <li><strong>WebSocket</strong>: Real-time multiplayer chat and game state updates</li>
+        <li><strong>Axios</strong>: Standard API requests for user login, resource sync, etc.</li>
+        <li><strong>Browser storage (localStorage)</strong>: Persistent user settings and localization</li>
+
+        <!-- Testing & CI -->
+        <li><strong>Jest</strong>: Unit tests for key modules</li>
+        <li><strong>GitHub Actions</strong>: Automated CI/CD for development workflow</li>
+
+        <!-- Game Features -->
+        <li><strong>Core game design</strong>: Real-time simulation engine, progress bars, idle/active hybrid systems</li>
+        <li><strong>Anti-hacking logic</strong>: Defensive coding and validation for critical operations</li>
+        <li><strong>User system</strong>: Account creation, login, progress tracking</li>
+        <li><strong>Resource system</strong>: Mining, construction, conversion and storage</li>
+        <li><strong>Dashboard system</strong>: Centralized interface for teams, missions, and reports</li>
+
+        <!-- Project Management -->
+        <li><strong>Design thinking</strong>: Focused on future-proofing, reusability, and system coherence</li>
+        <li><strong>vibe-coding</strong>: Accelerated development using code suggestions</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="project">
+    <img src="mhnow-automation.png" alt="Monster Hunter NOW automation" />
+    <div class="project-content">
+      <h3>Mobile Game Automation & Reverse Engineering</h3>
+      <p>
+        A personal deep-dive into automation and memory-level reverse engineering of a real-time AR ARPG mobile game,
+        <em>Monster Hunter NOW</em> (from Pokemon Go company). This project explored mobile system behavior, game memory, and scripting logic through practical experimentation.
+      </p>
+
+      <ul class="tools">
+        <li><strong>OpenCV + Vysor:</strong> Used computer vision to automate monster hunting by detecting game states and simulating user input</li>
+        <li><strong>Python Scripting:</strong> Designed real-time control flow to manage hunt timing, item usage, and in-battle decisions</li>
+        <li><strong>Rooted Android:</strong> Gained elevated permissions to implement GPS spoofing for map-based gameplay</li>
+        <li><strong>GameGuardian:</strong> Performed address-based memory inspection to modify weapon attack values during runtime</li>
+        <li><strong>APK reverse engineering:</strong> Decompiled the game client to retrieve hidden assets and internal keys (for educational exploration)</li>
+      </ul>
+
+      <p>
+        The automation system could consistently <strong>hunt all monsters in the game</strong> without human intervention.
+        As a result, I became one of the earliest players to reach <strong>max level and obtain a complete weapon collection</strong>,
+        all through scripting and reverse engineering.
+      </p>
+    </div>
+  </div>
+
+
+
+</section>
+
+
 
 </body>
 </html>
