@@ -27,8 +27,91 @@
       <li><a href="https://blog.yanqingwu.com/" target="_blank" rel="noopener">(old) Blog</a></li>
     </ul>
   </nav>
+  <section id="projects">
+    <div class="project">
+      <img src="static/img/course_project.png" alt="Misc. Projects" />
+      <div class="project-content">
+        <h3 class="project-title">Misc. Projects</h3>
+        CG: Computer Graphics, ML: Machine Learning, DL: Deep Learning, CV: Computer Vision, NLP: Natural Language Processing
+
+        <!-- ML / DL / NLP -->
+        <h4>Machine Learning / Deep Learning / NLP</h4>
+        <ul class="project-list">
+          <li>
+            <strong><a href="https://github.com/pwyq/ECE356/tree/master">ML/NLP: 2020 U.S. Election Twitter Sentiment Analysis</a></strong> — Collected over 3M tweets using the Twitter API, performed data cleaning and preprocessing, and applied TF-IDF vectorization with Logistic Regression and Naive Bayes classifiers to predict sentiment (positive, negative, neutral) toward presidential candidates. Analyzed trends over time and visualized sentiment distributions using matplotlib and seaborn.
+            <em>Tech:</em> Python, scikit-learn, pandas, NumPy, matplotlib, seaborn, Twitter API, NLP, sentiment classification
+          </li>
+          <li>
+            <strong><a href="https://github.com/pwyq/cse2525-data-mining/blob/master/challenges/Yanqing_Wu_Code.py" target="_blank" rel="noopener">Netflix Challenge — Movie Rating Prediction</a></strong> — Built an <em>Item-Item Collaborative Filtering</em> system using Pearson correlation (centered cosine similarity), achieving RMSE 0.84991 on Kaggle <strong>(rank 1/250+)</strong>. Tuned nearest neighbors <code>N</code>, applied rating capping, and tested dynamic <code>N</code> selection; added cold-start handling via local deviation adjustment; evaluated on held-out datasets via <em>Kaggle API</em>.
+            <em>Tech:</em> Python, NumPy, Pandas, Kaggle API.
+          </li>
+          <li>
+            <strong>ML/DL: Prediction of Gait Freezing in Parkinson’s Disease</strong> — Built machine learning models (LSTM and CNN) to detect and predict gait freezing episodes from wearable sensor data in PD patients. Achieved competitive accuracy in classification tasks and evaluated models with confusion matrices and ROC curves.
+            <em>Tech:</em> MATLAB, Deep Learning Toolbox.
+          </li>
+          <li>
+            <strong><a href="https://github.com/pwyq/stock-trading">ML/NLP: Stock Price Prediction via News Sentiment</a></strong> — Built a machine learning model to forecast stock trends based on financial news sentiment, combining text analytics with historical market data.
+            <em>Tech:</em> Python, Pandas, scikit-learn, NLP, sentiment analysis, time series forecasting
+          </li>
+        </ul>
+
+        <!-- Computer Graphics -->
+        <h4>Computer Graphics</h4>
+        <ul class="project-list">
+          <li>
+            <strong><a href="https://github.com/pwyq/cg_project">CG: Ray Tracer</a></strong> — Implemented a ray tracing engine from scratch, supporting recursive reflections, refractions, Phong shading, and multiple light sources.
+            <em>Tech:</em> C++, OpenGL (for preview), image output to PPM.
+          </li>
+        </ul>
+
+        <!-- Computer Vision / Robotics -->
+        <h4>Computer Vision / Robotics</h4>
+        <ul class="project-list">
+          <li>
+            <strong>ML/CV: Semantic Segmentation</strong> — Developed computer vision pipeline to classify each pixel into semantic categories, enabling scene understanding for downstream robotics tasks. Benchmarked against BiSeNet.
+            <em>Tech:</em> Python, OpenCV, PyTorch
+          </li>
+          <li>
+            <strong><a href="https://github.com/pwyq/UWRoboticsTeam/tree/master/MarsRover2017">CV: Object Contour Detection & Following</a></strong> — Implemented contour detection to identify and track object boundaries in real time, integrating with motion control for robotic following.
+            <em>Tech:</em> Python, OpenCV, edge detection, contour extraction
+          </li>
+          <li>
+            <strong>Robotics: Music-Following Robot</strong> — A line-following robot that converts varying grayscale levels into corresponding sound frequencies, integrating motion control with auditory feedback.
+            <em>Tech:</em> Arduino programming, hardware design (MOSFET, motors), sensor integration, algorithm design
+          </li>
+        </ul>
+
+        <!-- Hardware / Embedded -->
+        <h4>Hardware / Embedded Systems</h4>
+        <ul class="project-list">
+          <li>
+            <strong><a href="https://github.com/pwyq/FPGA-Music-Player/blob/master/music_player.c">Verilog: FPGA Music Player</a></strong> — Designed and implemented a music playback system on an Altera DE2 FPGA board, supporting WAV audio decoding, SD card file I/O, real-time playback control, and synchronized LED visual effects. Implemented hardware control for push buttons and switches, along with modular Verilog design for audio output via the audio codec chip.
+            <em>Tech:</em> Verilog, C, Quartus Prime, Altera DE2, Audio Codec, SD Card I/O.
+          </li>
+          <li>
+            <strong><a href="https://github.com/pwyq/BME351">Verilog: Kirsch Edge Detection</a></strong> — Implemented the Kirsch operator in Verilog for 8-directional edge detection on grayscale images, optimized for high-throughput processing in FPGA-based systems.
+            <em>Tech:</em> Verilog, FPGA design, hardware optimization, image processing algorithms
+          </li>
+        </ul>
+
+        <!-- Apps / Software Tools -->
+        <h4>Apps & Software Tools</h4>
+        <ul class="project-list">
+          <li>
+            <strong><a href="https://github.com/pwyq/2048-course-project/tree/master/source%20code">App Development: 2048 Game (Android)</a></strong> — Implemented both <em>touch</em> swipes and <em>sensor</em> control: shake/tilt in each direction to trigger moves, using the device accelerometer with a high-pass filter to detect directional impulses. Smooth animations and score/undo included.
+            <em>Tech:</em> Java (Android Studio), SensorManager (Accelerometer), View animations.
+          </li>
+          <li>
+            <strong>Matrix Calculator (CLI)</strong> — Implemented a matrix computation suite (for integers only) with file/terminal input, supporting arithmetic, linear algebra solvers, and property analysis (rank, determinant, transpose, power), with Python helpers for matrix generation and result validation.
+            <em>Tech:</em> C (core), Python (generation & validation).
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
   <section id="projects">
+    <h1>Projects with Visual Demo (Robotics Simulation, or GUI)</h1>
     <div class="project">
       <img src="static/img/Belludum-logo-blue-red.svg" alt="Belludum Logo" />
       <div class="project-content">
@@ -75,9 +158,9 @@
     <div class="project">
       <img src="static/img/FillGame.png" alt="Fill-Game screenshot" />
       <div class="project-content">
-        <h3>Heuristic Search: Fill-Game AI Solver <a href="https://github.com/pwyq/Fill-Game" target="_blank" rel="noopener">[GitHub]</a><a></a></h3>
+        <h3>Fill-Game, with AI Opponents <a href="https://github.com/pwyq/Fill-Game" target="_blank" rel="noopener">[GitHub]</a><a></a></h3>
         <p>
-          A two-player, adversarial version of Fillomino—built with heuristic search algorithms to support both PvE and PvP play.
+          A two-player, adversarial version of Fillomino—built with heuristic search algorithms to support both PvE (Human vs. AI) and PvP (Human vs. Human) play.
         </p>
         <p>
           Implemented in modern C++ (with a Qt GUI), and featuring a variety of search strategies—Depth-First Proof Number Search (DFPN), Proof Number Search (PNS), Minimax & Negamax (each with alpha-beta pruning and transposition tables), plus Monte Carlo Tree Search (MCTS).
@@ -219,26 +302,6 @@
         </ul>
       </div>
     </div>
-
-    <div class="project">
-      <img src="static/img/netflix.png" alt="Netflix Challenge — Movie Rating Prediction" />
-      <div class="project-content">
-        <h3 class="project-title">Netflix Challenge — Movie Rating Prediction</h3>
-        <p class="project-description">
-          Developed an <strong>Item-Item Collaborative Filtering</strong> recommendation algorithm to predict movie ratings, achieving a 
-          minimum RMSE of 0.84991 on the Kaggle leaderboard <strong>(rank 1/250+)</strong>.  
-          The system was trained on nearly 1 million ratings from ~6 thousands users for ~4 thousands movies, using user demographics 
-          (gender, age, profession) and movie metadata (title, release year).
-        </p>
-        <ul class="tools">
-          <li><strong>Item-Item Collaborative Filtering</strong>: Implemented Pearson correlation (centered cosine similarity) with <em>Python, NumPy, Pandas</em>.</li>
-          <li><strong>Parameter Optimization</strong>: Tuned nearest neighbors <code>N</code>, applied rating capping, and tested dynamic <code>N</code> selection.</li>
-          <li><strong>Cold-Start Handling</strong>: Applied local deviation adjustment to improve predictions for new items/users.</li>
-          <li><strong>Performance Evaluation</strong>: Generated Kaggle submissions via <em>Kaggle API</em> for RMSE-based scoring on held-out datasets.</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="project">
       <img src="static/img/wgviewer.png" alt="Warship Girls Viewer" />
 
@@ -273,7 +336,9 @@
     <div class="project">
       <img src="static/img/mhnow-automation.png" alt="Monster Hunter NOW automation" />
       <div class="project-content">
-        <h3>Mobile Game Automation & Reverse Engineering</h3>
+        <h3>Mobile Game Automation & Reverse Engineering
+          <a href="https://github.com/pwyq/MHNow_Farm" target="_blank" rel="noopener">[GitHub]</a>
+        </h3>
         <p>
           A personal deep-dive into automation and memory-level reverse engineering of a real-time AR ARPG,
           <em>Monster Hunter NOW</em> (from Pokemon Go company). Explored mobile system behavior, game memory, and scripting logic.
@@ -292,59 +357,7 @@
       </div>
     </div>
 
-    <div class="project">
-      <img src="static/img/course_project.png" alt="Course Projects" />
-      <div class="project-content">
-        <h3 class="project-title">Misc. Projects</h3>
-        CG: Computer Graphics, ML: Machine Learning, DL: Deep Learning, CV: Computer Vision
-        <ul class="project-list">
-          <li>
-            <strong>CG: Ray Tracer</strong> — Implemented a ray tracing engine from scratch, supporting recursive reflections, refractions, Phong shading, and multiple light sources.  
-            <em>Tech:</em> C++, OpenGL (for preview), image output to PPM.
-          </li>
-          <li>
-            <strong>App Development: 2048 Game (Android)</strong> — Implemented both <em>touch</em> swipes and <em>sensor</em> control:
-            shake/tilt in each direction to trigger moves, using the device accelerometer with a
-            high-pass filter to detect directional impulses. Smooth animations and score/undo included.
-            <em>Tech:</em> Java (Android Studio), SensorManager (Accelerometer), View animations.
-          </li>
-          <li>
-            <strong>Verilog: FPGA Music Player</strong> — Designed and implemented a music playback system on an FPGA, including audio decoding, playback control, and hardware-level I/O for buttons and LEDs.  
-            <em>Tech:</em> Verilog, Quartus Prime, Altera DE2 board.
-          </li>
-          <li>
-            <strong>Verilog: Kirsch Edge Detection</strong> — Implemented the Kirsch operator in Verilog for 8-directional edge detection on grayscale images, optimized for high-throughput processing in FPGA-based systems.
-            <em>Tech:</em> Verilog, FPGA design, hardware optimization, image processing algorithms
-          </li>
-          <li>
-            <strong>ML/DL: Prediction of Gait Freezing in Parkinson’s Disease</strong> — Built machine learning models (LSTM and CNN) to detect and predict gait freezing episodes from wearable sensor data in PD patients.  
-            Achieved competitive accuracy in classification tasks and evaluated models with confusion matrices and ROC curves.  
-            <em>Tech:</em> MATLAB, Deep Learning Toolbox.
-          </li>
-          <li>
-            <strong>Robotics: Music-Following Robot</strong> — A line-following robot that converts varying grayscale levels into corresponding sound frequencies, integrating motion control with auditory feedback.
-            <em>Tech:</em> Arduino programming, hardware design (MOSFET, motors), sensor integration, algorithm design
-          </li>
-          <li>
-            <strong>ML/CV: Semantic Segmentation</strong> — Developed computer vision pipeline to classify each pixel into semantic categories, enabling scene understanding for downstream robotics tasks. Benchmarked against BiSeNet.
-            <em>Tech:</em> Python, OpenCV, PyTorch
-          </li>
-          <li>
-            <strong>CV: Object Contour Detection & Following</strong> — Implemented contour detection to identify and track object boundaries in real time, integrating with motion control for robotic following.
-            <em>Tech:</em> Python, OpenCV, edge detection, contour extraction
-          </li>
-          <li>
-            <strong>ML/DL: Twitter Sentiment Analysis</strong> — Developed an NLP pipeline to analyze and classify sentiment in tweets, leveraging pre-trained language models for polarity detection and trend analysis.
-            <em>Tech:</em> Python, scikit-learn, Transformers, NLP, sentiment classification
-          </li>
 
-          <li>
-            <strong>ML/DL: Stock Price Prediction via News Sentiment</strong> — Built a machine learning model to forecast stock trends based on financial news sentiment, combining text analytics with historical market data.
-            <em>Tech:</em> Python, Pandas, scikit-learn, NLP, sentiment analysis, time series forecasting
-          </li>
-        </ul>
-      </div>
-    </div>
   </section>
 </body>
 </html>
