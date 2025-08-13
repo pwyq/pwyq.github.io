@@ -82,6 +82,7 @@ a:hover {
   padding: 1rem;
 }
 .project img { max-width: 300px; border-radius: 8px; }
+.project video { max-width: 300px; border-radius: 8px; }
 .project-content { flex: 1 1 320px; }
 .tools {
   list-style: none;
@@ -95,4 +96,12 @@ a:hover {
   padding: 0.4em 0.8em;
   border-radius: 4px;
   font-size: 0.9em;
+}
+.video-wrapper {
+  position: relative;
+  border-radius: 8px;
+}
+.video-wrapper iframe {
+  max-height: 300px;
+  border-radius: 8px;
 }
