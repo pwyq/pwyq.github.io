@@ -75,12 +75,210 @@
     </div>
 
     <div class="project">
+      <img src="static/img/FillGame.png" alt="Fill-Game screenshot" />
+      <div class="project-content">
+        <h3>Fill-Game (Adversarial Fillomino) <a href="https://github.com/pwyq/Fill-Game" target="_blank" rel="noopener">[GitHub]</a><a></a></h3>
+        <p>
+          A two-player, adversarial version of Fillomino—built with cutting-edge search algorithms to support both local and cross-machine play.
+        </p>
+        <p>
+          Implemented in modern C++ (with a Qt GUI), and featuring a variety of search strategies—Depth-First Proof Number Search (DFPN), Proof Number Search (PNS), Minimax & Negamax (each with alpha-beta pruning and transposition tables), plus Monte Carlo Tree Search (MCTS).
+        </p>
+        <ul class="tools">
+          <li><strong>C++ 20</strong></li>
+          <li><strong>Qt</strong> (cross-platform GUI)</li>
+          <li><strong>DFPN, PNS</strong>: Strategic search planning</li>
+          <li><strong>Minimax / Negamax</strong> w/ alpha-beta pruning & transposition tables</li>
+          <li><strong>MCTS</strong>: Probabilistic, long-horizon planning</li>
+          <li><strong>Cross-machine & local play</strong></li>
+          <li><strong>Unit tests</strong> & performance tuning</li>
+          <li><strong>Profiler</strong>: Valgrind, KCachegrind</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="static/img/IRB2600_moving_in_RobotStudio.gif" alt="IRB2600 moving in RobotStudio" />
+      <div class="project-content">
+        <h3>IRB2600 Robot Motion Simulation</h3>
+        <p>
+          A simulation project demonstrating motion planning and execution for the ABB IRB2600 industrial robot arm.
+          Developed using a mix of scripting and simulation tools to bridge virtual prototyping with real-world robotics workflows.
+        </p>
+        <p>
+          The work included creating robot motion sequences, integrating with ABB RobotStudio for visualization, and
+          using CoppeliaSim (formerly V-REP) for simulation and control logic testing on Ubuntu.
+        </p>
+        <ul class="tools">
+          <li><strong>Python</strong>: Control scripts and data handling</li>
+          <li><strong>Lua</strong>: Embedded scripting for CoppeliaSim (V-REP)</li>
+          <li><strong>ABB RobotStudio</strong>: Industrial robot simulation and programming</li>
+          <li><strong>CoppeliaSim (V-REP)</strong>: Physics-based robot simulation</li>
+          <li><strong>Ubuntu</strong>: Development and runtime environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="static/img/viwistar.gif" alt="IRB2600 welding task simulation" />
+      <div class="project-content">
+        <h3>IRB2600 Welding Task Simulation</h3>
+        <p>
+          A simulation of an ABB IRB2600 robot executing a welding operation in a virtual environment.
+          The project focused on task-specific motion planning, welding path generation, and fine-tuning
+          joint trajectories for smooth and accurate operation.
+        </p>
+        <p>
+          Combined industrial simulation software with scripting to automate and visualize welding processes before deployment. I also
+          benchmarked reinforcement learning approaches — <strong>Proximal Policy Optimization (PPO)</strong> and
+          <strong>Soft Actor-Critic (SAC)</strong> — to evaluate their performance in learning efficient welding paths.
+        </p>
+        <ul class="tools">
+          <li><strong>RL Algorithms</strong>: PPO, SAC</li>
+          <li><strong>Python</strong>: Welding path scripting, RL benchmarking</li>
+          <li><strong>Lua</strong>: Custom motion control in CoppeliaSim (V-REP)</li>
+          <li><strong>CoppeliaSim (V-REP)</strong>: Kinematics and task validation</li>
+          <li><strong>Ubuntu</strong>: Development and runtime environment</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="project">
+      <video controls autoplay muted loop playsinline>
+        <source src="static/img/OMPL_LazyPRM_Obstacle_Avoidance_demo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <div class="project-content">
+        <h3>OMPL LazyPRM Obstacle Avoidance</h3>
+        <p>
+          A motion planning demo using the <strong>Open Motion Planning Library (OMPL)</strong> with the LazyPRM algorithm
+          to navigate around obstacles. Demonstrates efficient graph-based planning for environments with complex geometry.
+        </p>
+        <ul class="tools">
+          <li><strong>OMPL</strong>: LazyPRM motion planning</li>
+          <li><strong>Python</strong>: Planning orchestration and visualization</li>
+          <li><strong>Ubuntu</strong>: Development and runtime environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <video controls autoplay muted loop playsinline>
+        <source src="static/img/husky_phase1.mp4" type="video/mp4">
+      </video>
+
+      <div class="project-content">
+        <h3>Husky UGV — Teleop & Camera Perception (Gazebo + RViz)</h3>
+        <p>
+          A simulation and control stack for Clearpath’s Husky UGV: keyboard teleoperation in Gazebo with live camera
+          streams visualized in RViz. Includes topic wiring, launch files, and a minimal perception pipeline for
+          testing navigation behaviors in a sandboxed environment.
+        </p>
+        <ul class="tools">
+          <li><strong>ROS</strong>: node graph, topics, launch files</li>
+          <li><strong>Gazebo</strong>: physics simulation, Husky model/plug-ins</li>
+          <li><strong>RViz</strong>: visualization (camera/image topics, TF, robot model)</li>
+          <li><strong>teleop_twist_keyboard</strong>: WASD keyboard control</li>
+          <li><strong>Camera input</strong>: Gazebo camera / USB cam via <code>image_transport</code></li>
+          <li><strong>Ubuntu</strong>: development & runtime</li>
+          <li><strong>rosbag</strong>: data capture & replay (optional)</li>
+          <li><strong>URDF/Xacro</strong>: robot model tweaks (optional)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/1bRu2PWA9b8"
+          title="BobaTron — Bubble Tea Self-Serving Machine"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="project-content">
+        <h3>BobaTron — Bubble Tea Self-Serving Machine</h3>
+        <p>
+          Fully automated, tablet-operated bubble tea machine integrating dispensing, assembly/delivery, power,
+          micro-controller, and user interaction subsystems. Built to cut wait time and ensure taste consistency,
+          with precise feedback-controlled dispensing and contact-less mixing.
+        </p>
+        <p>
+          Highlights: load-cell feedback loop with pumps & Archimedes screw for accurate dosing; orbital shaker
+          for hygienic mixing; tablet UI with Wi-Fi control; multi-Arduino network over I²C. The prototype meets
+          key specs and produces a drink in ~75 seconds; the milk module actively cools from ~9.5 °C to ~3 °C
+          in ~25 minutes.
+        </p>
+        <ul class="tools">
+          <li><strong>Control</strong>: Multi-Arduino network (I²C), ESP32 Wi-Fi server, tablet UI</li>
+          <li><strong>Dispensing</strong>: Diaphragm & peristaltic pumps, Archimedes screw, load-cell feedback</li>
+          <li><strong>Assembly/Mixing</strong>: Conveyor & cup dispenser, orbital shaker (contact-less)</li>
+          <li><strong>Power/Thermal</strong>: Regulated DC rails, Peltier cooling with temperature feedback</li>
+          <li><strong>Performance</strong>: ≈70 sec/drink;</li>
+          <li><strong>Cost</strong>: Prototype ≈ C$1,500 (under C$4,000 target)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="static/img/netflix.png" alt="Netflix Challenge — Movie Rating Prediction" />
+      <div class="project-content">
+        <h3 class="project-title">Netflix Challenge — Movie Rating Prediction</h3>
+        <p class="project-description">
+          Developed an <strong>Item-Item Collaborative Filtering</strong> recommendation algorithm to predict movie ratings, achieving a 
+          minimum RMSE of 0.84991 on the Kaggle leaderboard <strong>(rank 1/250+)</strong>.  
+          The system was trained on nearly 1 million ratings from ~6 thousands users for ~4 thousands movies, using user demographics 
+          (gender, age, profession) and movie metadata (title, release year).
+        </p>
+        <ul class="tools">
+          <li><strong>Item-Item Collaborative Filtering</strong>: Implemented Pearson correlation (centered cosine similarity) with <em>Python, NumPy, Pandas</em>.</li>
+          <li><strong>Parameter Optimization</strong>: Tuned nearest neighbors <code>N</code>, applied rating capping, and tested dynamic <code>N</code> selection.</li>
+          <li><strong>Cold-Start Handling</strong>: Applied local deviation adjustment to improve predictions for new items/users.</li>
+          <li><strong>Performance Evaluation</strong>: Generated Kaggle submissions via <em>Kaggle API</em> for RMSE-based scoring on held-out datasets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="static/img/wgviewer.png" alt="Warship Girls Viewer" />
+
+      <div class="project-content">
+        <h3 class="project-title">
+          WGViewer — Game Automation & GUI Tool for Warship Girls
+          <a href="https://github.com/WarshipGirls/WGViewer" target="_blank" rel="noopener">[GitHub]</a>
+          <a href="https://github.com/WarshipGirls/WGViewer/tree/master/screenshots" target="_blank" rel="noopener">
+            [More Screenshots]
+          </a>
+        </h3>
+        <p class="project-description">
+          Developed a cross-platform GUI tool for <em>Warship Girls</em>, a popular mobile game in Asia, enabling 
+          advanced automation and in-depth game data management. 
+          The project reverse-engineered and integrated with the game’s API to provide full automated gameplay, 
+          equipment management, and resource optimization features. 
+          Achieved <strong>50,000+ downloads</strong> from Chinese gaming forums.
+        </p>
+        <ul class="tools">
+          <li><strong>GUI Development</strong>: Built an intuitive, cross-platform interface using <em>PyQt</em>.</li>
+          <li><strong>Game API Reverse Engineering</strong>: Automated gameplay, resource/equipment tracking, and event handling.</li>
+          <li><strong>Automation Engine</strong>: Designed routines for fully unattended daily tasks, battles, and upgrades.</li>
+          <li><strong>Version Management</strong>: Created modular architecture to quickly adapt to frequent game updates.</li>
+          <li><strong>Continuous Integration</strong>: Set up GitHub Actions for automated builds and releases.</li>
+          <li><strong>Asset Organization</strong>: Structured resources for images, configs, and logs for maintainability.</li>
+          <li><strong>Performance Optimization</strong>: Improved memory and network efficiency for long-running sessions.</li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="project">
       <img src="static/img/mhnow-automation.png" alt="Monster Hunter NOW automation" />
       <div class="project-content">
         <h3>Mobile Game Automation & Reverse Engineering</h3>
         <p>
           A personal deep-dive into automation and memory-level reverse engineering of a real-time AR ARPG,
-          <em>Monster Hunter NOW</em>. Explored mobile system behavior, game memory, and scripting logic.
+          <em>Monster Hunter NOW</em> (from Pokemon Go company). Explored mobile system behavior, game memory, and scripting logic.
         </p>
         <ul class="tools">
           <li><strong>OpenCV + Vysor:</strong> Vision-based automation of hunting flows</li>
@@ -95,7 +293,38 @@
         </p>
       </div>
     </div>
-  </section>
 
+    <div class="project">
+      <img src="static/img/course_project.png" alt="Course Projects" />
+      <div class="project-content">
+        <h3 class="project-title">Misc. Projects</h3>
+        <ul class="project-list">
+          <li>
+            <strong>Ray Tracer (Computer Graphics)</strong> — Implemented a ray tracing engine from scratch, supporting recursive reflections, refractions, Phong shading, and multiple light sources.  
+            <em>Tech:</em> C++, OpenGL (for preview), image output to PPM.
+          </li>
+          <li>
+            <strong>FPGA Music Player</strong> — Designed and implemented a music playback system on an FPGA, including audio decoding, playback control, and hardware-level I/O for buttons and LEDs.  
+            <em>Tech:</em> Verilog, Quartus Prime, Altera DE2 board.
+          </li>
+          <li>
+            <strong>2048 Game (Android)</strong> — Implemented both <em>touch</em> swipes and <em>sensor</em> control:
+            shake/tilt in each direction to trigger moves, using the device <strong>accelerometer</strong> with a
+            high-pass filter to detect directional impulses. Smooth animations and score/undo included.
+            <em>Tech:</em> Java (Android Studio), SensorManager (Accelerometer), View animations.
+          </li>
+          <li>
+            <strong>Kirsch Edge Detection</strong> — Implemented Kirsch operator for 8-directional edge detection on grayscale images, optimized for performance in large datasets.  
+            <em>Tech:</em> Python, NumPy, OpenCV.
+          </li>
+          <li>
+            <strong>Prediction of Gait Freezing in Parkinson’s Disease</strong> — Built machine learning models (LSTM and CNN) to detect and predict gait freezing episodes from wearable sensor data in PD patients.  
+            Achieved competitive accuracy in classification tasks and evaluated models with confusion matrices and ROC curves.  
+            <em>Tech:</em> MATLAB, Deep Learning Toolbox.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
