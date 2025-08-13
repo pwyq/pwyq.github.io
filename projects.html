@@ -27,9 +27,12 @@
       <li><a href="https://blog.yanqingwu.com/" target="_blank" rel="noopener">(old) Blog</a></li>
     </ul>
   </nav>
+  
+  
   <section id="projects">
     <div class="project">
       <div class="project-content">
+        <p><a href="#robotics-gui"> --> Jump to Robotics Simulation and GUI Projects section</a></p>
         <!-- ML / DL / NLP -->
         <h4>Machine Learning (ML) / Deep Learning (DL) / Natural Language Processing (NLP) </h4>
         <ul class="project-list">
@@ -107,7 +110,7 @@
   </section>
 
   <section id="projects">
-    <h1>Projects with Visual Demo (Robotics Simulation, or GUI)</h1>
+    <h1 id="robotics-gui">Projects with Visual Demo (Robotics Simulation, or GUI)</h1>
     <div class="project">
       <img src="static/img/Belludum-logo-blue-red.svg" alt="Belludum Logo" />
       <div class="project-content">
@@ -175,28 +178,6 @@
     </div>
 
     <div class="project">
-      <img src="static/img/IRB2600_moving_in_RobotStudio.gif" alt="IRB2600 moving in RobotStudio" />
-      <div class="project-content">
-        <h3>Dual Simulation: IRB2600 with ABB RobotStudio and CoppeliaSim (V-rep)</h3>
-        <p>
-          A simulation project demonstrating motion planning and execution for the ABB IRB2600 industrial robot arm.
-          Developed using a mix of scripting and simulation tools to bridge virtual prototyping with real-world robotics workflows.
-        </p>
-        <p>
-          The work included creating robot motion sequences, integrating with ABB RobotStudio for visualization, and
-          using CoppeliaSim (formerly V-REP) for simulation and control logic testing on Ubuntu.
-        </p>
-        <ul class="tools">
-          <li><strong>Python</strong>: Control scripts and data handling</li>
-          <li><strong>Lua</strong>: Embedded scripting for CoppeliaSim (V-REP)</li>
-          <li><strong>ABB RobotStudio</strong>: Industrial robot simulation and programming</li>
-          <li><strong>CoppeliaSim (V-REP)</strong>: Physics-based robot simulation</li>
-          <li><strong>Ubuntu</strong>: Development and runtime environment</li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="project">
       <img src="static/img/viwistar.gif" alt="IRB2600 welding task simulation" />
       <div class="project-content">
         <h3>Reinforcement Learning: IRB2600 Welding Task Simulation</h3>
@@ -215,6 +196,28 @@
           <li><strong>Python</strong>: Welding path scripting, RL benchmarking</li>
           <li><strong>Lua</strong>: Custom motion control in CoppeliaSim (V-REP)</li>
           <li><strong>CoppeliaSim (V-REP)</strong>: Kinematics and task validation</li>
+          <li><strong>Ubuntu</strong>: Development and runtime environment</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="static/img/IRB2600_moving_in_RobotStudio.gif" alt="IRB2600 moving in RobotStudio" />
+      <div class="project-content">
+        <h3>Dual Simulation: IRB2600 with ABB RobotStudio and CoppeliaSim (V-rep)</h3>
+        <p>
+          A simulation project demonstrating motion planning and execution for the ABB IRB2600 industrial robot arm.
+          Developed using a mix of scripting and simulation tools to bridge virtual prototyping with real-world robotics workflows.
+        </p>
+        <p>
+          The work included creating robot motion sequences, integrating with ABB RobotStudio for visualization, and
+          using CoppeliaSim (formerly V-REP) for simulation and control logic testing on Ubuntu.
+        </p>
+        <ul class="tools">
+          <li><strong>Python</strong>: Control scripts and data handling</li>
+          <li><strong>Lua</strong>: Embedded scripting for CoppeliaSim (V-REP)</li>
+          <li><strong>ABB RobotStudio</strong>: Industrial robot simulation and programming</li>
+          <li><strong>CoppeliaSim (V-REP)</strong>: Physics-based robot simulation</li>
           <li><strong>Ubuntu</strong>: Development and runtime environment</li>
         </ul>
       </div>
@@ -252,6 +255,7 @@
           testing navigation behaviors in a sandboxed environment.
         </p>
         <ul class="tools">
+          <li><strong>ORB_SLAM3</strong>: localization and mapping</li>
           <li><strong>ROS</strong>: node graph, topics, launch files</li>
           <li><strong>Gazebo</strong>: physics simulation, Husky model/plug-ins</li>
           <li><strong>RViz</strong>: visualization (camera/image topics, TF, robot model)</li>
