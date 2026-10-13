@@ -16,7 +16,6 @@ body {
   background: var(--sand-light);
   color: var(--ink-dark);
 }
-img { max-width: 100%; height: auto; display: block; }
 
 /* Links */
 a {
@@ -28,15 +27,10 @@ a:hover {
 }
 
 /* Layout */
-.row::after { content: ""; display: table; clear: both; }
-.column { float: left; padding: 50px; }
-.left  { width: 30%; }
-.right { width: 70%; }
+.profile { padding: 50px; }
 
 @media (max-width: 600px) {
-  #left_profile { display: none; }
-  #right_profile { width: 100%; }
-  .column { padding: 24px; }
+  .profile { padding: 24px; }
 }
 
 /* Nav bar */
@@ -66,24 +60,18 @@ a:hover {
 }
 
 /* Projects section */
-#projects {
+#projects,
+#robotics-projects {
   padding: 2rem;
   background: var(--sand-mid);
 }
 .project {
-  display: flex;
-  gap: 1.5rem;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
-  align-items: flex-start;
   background: var(--sand-light);
   border: 1px solid var(--sand-dark);
   border-radius: 8px;
   padding: 1rem;
 }
-.project img { max-width: 300px; border-radius: 8px; }
-.project video { max-width: 300px; border-radius: 8px; }
-.project-content { flex: 1 1 320px; }
 .tools {
   list-style: none;
   padding-left: 0;
@@ -96,12 +84,4 @@ a:hover {
   padding: 0.4em 0.8em;
   border-radius: 4px;
   font-size: 0.9em;
-}
-.video-wrapper {
-  position: relative;
-  border-radius: 8px;
-}
-.video-wrapper iframe {
-  max-height: 300px;
-  border-radius: 8px;
 }
